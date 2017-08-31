@@ -34,7 +34,8 @@
 <!-- Tabs -->
   <!-- Buttons Tab-->
     <string name="buttons_tab_title">Buttons</string>
-
+    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+    <string name="double_tap_sleep_navbar_summary">Double tap on the navigation bar to put the device to sleep</string>
   <!-- Lockscreen Tab-->
     <string name="lockscreen_tab_title">Lock Screen</string>
 
