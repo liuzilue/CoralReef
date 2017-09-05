@@ -71,14 +71,13 @@
         android:title="@string/volume_keys_control_media_stream_title"
         android:summary="@string/volume_keys_control_media_stream_summary"
         android:defaultValue="false" />
-<!--
-    <SwitchPreference
-        android:key="volume_rocker_music_controls"
+
+    <com.aquarios.coralreef.preference.SystemSettingSwitchPreference
+        android:key="volume_button_music_controls"
         android:summary="@string/volume_rocker_music_controls_summary"
         android:title="@string/volume_rocker_music_controls_title"
-        android:defaultValue="true"
-        android:dependency="volume_rocker_wake" />
-
+        android:defaultValue="true" />
+<!--
     <com.aquarios.coralreef.preference.SecureSettingSwitchPreference
         android:key="sysui_volume_down_silent"
         android:title="@string/volbtn_down_zen_title"
