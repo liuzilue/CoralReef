@@ -78,6 +78,9 @@
     <!-- Lockscreen double tap to sleep -->
     <string name="double_tap_sleep_lockscreen_title">Double-tap to sleep anywhere</string>
     <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lock screen to put the device to sleep</string>
+    <!-- Media art -->
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
   <!-- Quick Settings Tab -->
     <string name="quick_settings_tab_title">Quick Settings</string>
 
