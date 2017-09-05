@@ -22,7 +22,6 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -31,8 +30,8 @@ import com.android.internal.util.aquarios.AquaUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class ButtonsTab extends SettingsPreferenceFragment
-        implements OnPreferenceChangeListener {
+public class ButtonsTab extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
@@ -41,6 +40,7 @@ public class ButtonsTab extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.buttons_tab);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 

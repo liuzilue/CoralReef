@@ -1,16 +1,13 @@
 package com.aquarios.coralreef;
 
-import android.app.ActionBar;
+import com.android.internal.logging.nano.MetricsProto;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.preference.Preference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceManager;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.PreferenceScreen;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -29,11 +26,6 @@ import com.aquarios.coralreef.tabs.QuickSettingsTab;
 import com.aquarios.coralreef.tabs.StatusBarTab;
 import com.aquarios.coralreef.tabs.NotificationsTab;
 import com.aquarios.coralreef.tabs.SystemMiscTab;
-
-import com.android.internal.logging.nano.MetricsProto;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CoralReef extends SettingsPreferenceFragment {
 

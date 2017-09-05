@@ -26,6 +26,7 @@
     <string name="lockscreen_display_category_title">LOCK SCREEN DISPLAY</string>
     <string name="general_category_title">GENERAL</string>
     <string name="other_category">OTHER</string>
+    <string name="led_category">LED CONTROLS</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->

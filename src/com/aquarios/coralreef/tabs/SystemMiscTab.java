@@ -23,7 +23,6 @@ import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -32,8 +31,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class SystemMiscTab extends SettingsPreferenceFragment
-        implements OnPreferenceChangeListener {
+public class SystemMiscTab extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     private static final String APPS_SECURITY = "apps_security";
     private static final String SMS_OUTGOING_CHECK_MAX_COUNT = "sms_outgoing_check_max_count";

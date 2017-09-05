@@ -17,26 +17,26 @@
 package com.aquarios.coralreef.tabs;
 
 import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
+import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class LockScreenTab extends SettingsPreferenceFragment
-        implements OnPreferenceChangeListener {
+public class LockScreenTab extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_tab);
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+
     }
 
     @Override
@@ -44,8 +44,7 @@ public class LockScreenTab extends SettingsPreferenceFragment
         return MetricsProto.MetricsEvent.AQUA;
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        return false;
     }
 }
