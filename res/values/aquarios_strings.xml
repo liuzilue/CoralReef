@@ -19,6 +19,9 @@
 <!-- Coral Reef menus and categories -->
     <string name="coral_reef_title">Coral Reef</string>
     <string name="keywords_aquarios">AquariOS</string>
+    <string name="navbar_category_title">NAVBAR OPTIONS</string>
+    <string name="power_menu_category_title">POWER MENU</string>
+    <string name="volume_rocker_category_title">VOLUME ROCKER</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->
@@ -34,8 +37,38 @@
 <!-- Tabs -->
   <!-- Buttons Tab-->
     <string name="buttons_tab_title">Buttons</string>
+    <!-- Navbar category -->
     <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
     <string name="double_tap_sleep_navbar_summary">Double tap on the navigation bar to put the device to sleep</string>
+    <string name="navigationbar_settings_title">Navigation bar</string>
+    <string name="navigationbar_settings_summary">Customize navigation style and behavior</string>
+    <!-- Power Menu -->
+    <!-- Volume Rocker -->
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_title">Volume rocker</string>
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+    <!-- Volume key orientation swap -->
+    <string name="swap_volume_buttons_title">Volume button swap</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons action when in landscape orientation</string>
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+    <!-- Power notification controls -->
+    <string name="power_notification_title">Power notification controls</string>
+    <string name="power_notification_summary">Advanced notification controls and information</string>
+    <!-- Volume down enter do not disturb -->
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">Allow volume down to enter do not disturb mode</string>
+    <!-- Volume up exit do not disturb -->
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">Allow volume up to exit do not disturb mode</string>
+    <!-- Volume do not disturb switch -->
+    <string name="vol_zen_title">Do not disturb switch</string>
+    <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <!-- Lockscreen Tab-->
     <string name="lockscreen_tab_title">Lock Screen</string>
 
