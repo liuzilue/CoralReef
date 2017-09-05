@@ -22,6 +22,8 @@
     <string name="navbar_category_title">NAVBAR OPTIONS</string>
     <string name="power_menu_category_title">POWER MENU</string>
     <string name="volume_rocker_category_title">VOLUME ROCKER</string>
+    <string name="lockscreen_actions_category_title">LOCK SCREEN ACTIONS</string>
+    <string name="lockscreen_display_category_title">LOCK SCREEN DISPLAY</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->
@@ -71,6 +73,10 @@
     <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <!-- Lockscreen Tab-->
     <string name="lockscreen_tab_title">Lock Screen</string>
+    <!-- Lock screen actions category -->
+    <!-- Lockscreen double tap to sleep -->
+    <string name="double_tap_sleep_lockscreen_title">Double-tap to sleep anywhere</string>
+    <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lock screen to put the device to sleep</string>
 
   <!-- Quick Settings Tab -->
     <string name="quick_settings_tab_title">Quick Settings</string>
