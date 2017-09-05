@@ -24,6 +24,7 @@
     <string name="volume_rocker_category_title">VOLUME ROCKER</string>
     <string name="lockscreen_actions_category_title">LOCK SCREEN ACTIONS</string>
     <string name="lockscreen_display_category_title">LOCK SCREEN DISPLAY</string>
+    <string name="general_category_title">GENERAL</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->
@@ -77,7 +78,6 @@
     <!-- Lockscreen double tap to sleep -->
     <string name="double_tap_sleep_lockscreen_title">Double-tap to sleep anywhere</string>
     <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lock screen to put the device to sleep</string>
-
   <!-- Quick Settings Tab -->
     <string name="quick_settings_tab_title">Quick Settings</string>
 
@@ -86,7 +86,8 @@
 
   <!-- Notifications Tab -->
     <string name="notifications_tab_title">Notifications</string>
-
+    <string name="status_bar_quick_qs_pulldown">One-finger pull-down</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Quickly enter expanded notification view by pulling down on right side of status bar using one finger</string>
   <!-- System/Misc Tab -->
     <string name="system_misc_tab_title">System/Misc</string>
 </resources>
