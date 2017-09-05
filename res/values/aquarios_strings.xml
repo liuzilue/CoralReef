@@ -25,6 +25,7 @@
     <string name="lockscreen_actions_category_title">LOCK SCREEN ACTIONS</string>
     <string name="lockscreen_display_category_title">LOCK SCREEN DISPLAY</string>
     <string name="general_category_title">GENERAL</string>
+    <string name="other_category">OTHER</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->
@@ -93,4 +94,12 @@
     <string name="status_bar_quick_qs_pulldown_summary">Quickly enter expanded notification view by pulling down on right side of status bar using one finger</string>
   <!-- System/Misc Tab -->
     <string name="system_misc_tab_title">System/Misc</string>
+
+    <!-- Sms security limit -->
+    <string name="apps_security_options_title">Apps security</string>
+    <string name="sms_outgoing_check_max_count_title">SMS apps message limit</string>
+    <string name="sms_outgoing_check_max_count_dialog">How many messages per minute an app can send before showing an alert</string>
+    <string name="sms_outgoing_check_max_count_default">30 per minute (default)</string>
+    <string name="sms_outgoing_check_max_count_hundred">100 per minute</string>
+    <string name="sms_outgoing_check_max_count_sixhundred">600 per minute</string>
 </resources>
