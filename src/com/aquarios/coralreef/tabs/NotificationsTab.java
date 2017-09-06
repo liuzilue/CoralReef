@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
 
@@ -32,11 +33,25 @@ import com.android.settings.SettingsPreferenceFragment;
 public class NotificationsTab extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
 
+    private PreferenceCategory mLedsCategory;
+    private Preference mChargingLeds;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notifications_settings_tab);
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mLedsCategory = (PreferenceCategory) findPreference("abc_leds");
+        mChargingLeds = (Preference) findPreference("abc_charging_light");
+        if (mChargingLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            mLedsCategory.removePreference(mChargingLeds);
+        }
+        if (mChargingLeds == null) {
+            prefSet.removePreference(mLedsCategory);
+        }
     }
 
     @Override

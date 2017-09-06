@@ -97,6 +97,16 @@
     <string name="notifications_tab_title">Notifications</string>
     <string name="status_bar_quick_qs_pulldown">One-finger pull-down</string>
     <string name="status_bar_quick_qs_pulldown_summary">Quickly enter expanded notification view by pulling down on right side of status bar using one finger</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">Battery charging light</string>
+    <string name="battery_light_summary">Enable the option to show LED notifications based on the status of battery.</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full (100) battery</string>
   <!-- System/Misc Tab -->
     <string name="system_misc_tab_title">System/Misc</string>
     <!-- Sms security limit -->
