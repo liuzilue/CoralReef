@@ -73,6 +73,11 @@
     <!-- Volume do not disturb switch -->
     <string name="vol_zen_title">Do not disturb switch</string>
     <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Screen off power button torch</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
+    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
   <!-- Lockscreen Tab-->
     <string name="lockscreen_tab_title">Lock Screen</string>
     <!-- Lock screen actions category -->
