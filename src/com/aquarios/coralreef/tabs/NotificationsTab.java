@@ -40,10 +40,10 @@ public class NotificationsTab extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notifications_settings_tab);
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+        PreferenceScreen prefSet = getPreferenceScreen();
 
-        mLedsCategory = (PreferenceCategory) findPreference("abc_leds");
-        mChargingLeds = (Preference) findPreference("abc_charging_light");
+        mLedsCategory = (PreferenceCategory) findPreference("leds");
+        mChargingLeds = (Preference) findPreference("charging_light");
         if (mChargingLeds != null
                 && !getResources().getBoolean(
                         com.android.internal.R.bool.config_intrusiveBatteryLed)) {

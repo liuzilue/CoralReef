@@ -52,11 +52,11 @@
         android:title="@string/power_menu_title"
         android:summary="@string/power_menu_title_summary"
 	    android:fragment="com.aquarios.coralreef.fragments.PowerMenuSettings" />
-  </PreferenceCategory>
 -->
+  </PreferenceCategory>
+
 
   <PreferenceCategory
-        android:key="volume_rocker"
         android:title="@string/volume_rocker_category_title">
 <!--
     <SwitchPreference
@@ -101,6 +101,7 @@
         android:title="@string/vol_zen_title"
         android:summary="@string/vol_zen_summary"
         android:defaultValue="false"/>
-   </PreferenceCategory>
 -->
+   </PreferenceCategory>
+
 </PreferenceScreen>

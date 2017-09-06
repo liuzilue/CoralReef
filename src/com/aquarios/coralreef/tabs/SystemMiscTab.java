@@ -47,7 +47,6 @@ public class SystemMiscTab extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.system_misc_tab);
-        final PreferenceScreen prefScreen = getPreferenceScreen();
 
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();

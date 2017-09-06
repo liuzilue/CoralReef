@@ -26,6 +26,7 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.aquarios.AquaUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -43,7 +44,7 @@ public class ButtonsTab extends SettingsPreferenceFragment
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
-        if (!AbcUtils.deviceHasFlashlight(getContext())) {
+        if (!AquaUtils.deviceHasFlashlight(getContext())) {
             Preference toRemove = prefScreen.findPreference(TORCH_POWER_BUTTON_GESTURE);
             if (toRemove != null) {
                 prefScreen.removePreference(toRemove);

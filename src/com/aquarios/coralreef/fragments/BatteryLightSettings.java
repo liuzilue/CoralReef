@@ -27,7 +27,7 @@ import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.aquarios.coralreef.preferences.SystemSettingSwitchPreference;
+import com.aquarios.coralreef.preference.SystemSettingSwitchPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
