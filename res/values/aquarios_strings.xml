@@ -99,7 +99,6 @@
     <string name="status_bar_quick_qs_pulldown_summary">Quickly enter expanded notification view by pulling down on right side of status bar using one finger</string>
   <!-- System/Misc Tab -->
     <string name="system_misc_tab_title">System/Misc</string>
-
     <!-- Sms security limit -->
     <string name="apps_security_options_title">Apps security</string>
     <string name="sms_outgoing_check_max_count_title">SMS apps message limit</string>
@@ -107,4 +106,12 @@
     <string name="sms_outgoing_check_max_count_default">30 per minute (default)</string>
     <string name="sms_outgoing_check_max_count_hundred">100 per minute</string>
     <string name="sms_outgoing_check_max_count_sixhundred">600 per minute</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
 </resources>

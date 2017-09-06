@@ -18,6 +18,7 @@ package com.aquarios.coralreef.tabs;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -36,9 +37,11 @@ public class SystemMiscTab extends SettingsPreferenceFragment
 
     private static final String APPS_SECURITY = "apps_security";
     private static final String SMS_OUTGOING_CHECK_MAX_COUNT = "sms_outgoing_check_max_count";
+    private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
 
     private ListPreference mSmsCount;
     private int mSmsCountValue;
+    private ListPreference mLaunchPlayerHeadsetConnection;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +63,13 @@ public class SystemMiscTab extends SettingsPreferenceFragment
         if (!Utils.isVoiceCapable(getActivity())) {
             appsSecCategory.removePreference(mSmsCount);
             prefScreen.removePreference(appsSecCategory);
+
+        mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
+        int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
+                Settings.System.HEADSET_CONNECT_PLAYER, 4, UserHandle.USER_CURRENT);
+        mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
+        mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
+        mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -84,6 +94,15 @@ public class SystemMiscTab extends SettingsPreferenceFragment
                     mSmsCount.getEntries()[index]);
             Settings.Global.putInt(resolver,
                     Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, mSmsCountValue);
+            return true;
+        }
+        else if (preference == mLaunchPlayerHeadsetConnection) {
+            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
+            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
+            mLaunchPlayerHeadsetConnection.setSummary(
+                    mLaunchPlayerHeadsetConnection.getEntries()[index]);
+            Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
+                    mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
             return true;
         }
           return false;
