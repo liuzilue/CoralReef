@@ -16,6 +16,7 @@
 
 package com.aquarios.coralreef.tabs;
 
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -24,6 +25,7 @@ import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -37,10 +39,13 @@ public class SystemMiscTab extends SettingsPreferenceFragment implements
     private static final String APPS_SECURITY = "apps_security";
     private static final String SMS_OUTGOING_CHECK_MAX_COUNT = "sms_outgoing_check_max_count";
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
+    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
     private ListPreference mSmsCount;
     private int mSmsCountValue;
     private ListPreference mLaunchPlayerHeadsetConnection;
+    private ListPreference mRecentsClearAllLocation;
+    private SwitchPreference mRecentsClearAll;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,6 +73,14 @@ public class SystemMiscTab extends SettingsPreferenceFragment implements
         mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
         mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
         mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
+
+        // clear all recents
+        mRecentsClearAllLocation = (ListPreference) findPreference(RECENTS_CLEAR_ALL_LOCATION);
+        int location = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
+        mRecentsClearAllLocation.setValue(String.valueOf(location));
+        mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
+        mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -82,12 +95,12 @@ public class SystemMiscTab extends SettingsPreferenceFragment implements
         return MetricsProto.MetricsEvent.AQUA;
     }
 
-     public boolean onPreferenceChange(Preference preference, Object newValue) {
+     public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (preference == mSmsCount) {
-            mSmsCountValue = Integer.valueOf((String) newValue);
-            int index = mSmsCount.findIndexOfValue((String) newValue);
+            mSmsCountValue = Integer.valueOf((String) objValue);
+            int index = mSmsCount.findIndexOfValue((String) objValue);
             mSmsCount.setSummary(
                     mSmsCount.getEntries()[index]);
             Settings.Global.putInt(resolver,
@@ -95,13 +108,21 @@ public class SystemMiscTab extends SettingsPreferenceFragment implements
             return true;
         }
         else if (preference == mLaunchPlayerHeadsetConnection) {
-            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
-            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
+            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) objValue);
+            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) objValue);
             mLaunchPlayerHeadsetConnection.setSummary(
                     mLaunchPlayerHeadsetConnection.getEntries()[index]);
             Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
                     mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
             return true;
+        }
+        else if (preference == mRecentsClearAllLocation) {
+            int location = Integer.valueOf((String) objValue);
+            int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
+            mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
+        return true;
         }
           return false;
       }
