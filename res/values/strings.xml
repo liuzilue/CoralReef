@@ -28,6 +28,7 @@
     <string name="other_category">OTHER</string>
     <string name="led_category">LED CONTROLS</string>
     <string name="recents_category">RECENTS</string>
+    <string name="incall_vibration_category">IN-CALL VIBRATION</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->
@@ -109,6 +110,10 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full (100) battery</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
 
   <!-- System/Misc Tab -->
     <string name="system_misc_tab_title">System/Misc</string>

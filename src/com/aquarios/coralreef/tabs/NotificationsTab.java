@@ -29,8 +29,12 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.aquarios.coralreef.preference.Utils;
+
 public class NotificationsTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private PreferenceCategory mLedsCategory;
     private Preference mChargingLeds;
@@ -50,6 +54,10 @@ public class NotificationsTab extends SettingsPreferenceFragment implements
         }
         if (mChargingLeds == null) {
             prefSet.removePreference(mLedsCategory);
+        }
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefSet.removePreference(incallVibCategory);
         }
     }
 
