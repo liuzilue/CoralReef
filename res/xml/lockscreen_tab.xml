@@ -28,8 +28,13 @@
         android:title="@string/media_art_title"
         android:summary="@string/media_art_summary"
         android:defaultValue="false" />
-    </PreferenceCategory>
 
+    <PreferenceScreen
+        android:key="lockscreen_weather"
+        android:title="@string/lock_screen_weather_settings_title"
+        android:summary="@string/lock_screen_weather_settings_summary"
+        android:fragment="com.aquarios.coralreef.fragments.LockScreenWeatherSettings" />
+    </PreferenceCategory>
 
     <PreferenceCategory
          android:title="@string/lockscreen_actions_category_title">
