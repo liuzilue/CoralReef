@@ -38,7 +38,8 @@
         android:dependency="show_clear_all_recents" />
 
     <PreferenceCategory
-         android:title="@string/other_category" >
+        android:key="apps_security"
+        android:title="@string/other_category" >
 
     <ListPreference
         android:key="sms_outgoing_check_max_count"
