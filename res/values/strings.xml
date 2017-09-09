@@ -107,6 +107,7 @@
     <string name="status_bar_tab_title">Status Bar</string>
     <!-- DT2S on status bar -->
     <string name="double_tap_sleep_gesture_title">Double tap status bar to sleep</string>
+
   <!-- Notifications Tab -->
     <string name="notifications_tab_title">Notifications</string>
     <string name="status_bar_quick_qs_pulldown">One-finger pull-down</string>
@@ -125,6 +126,9 @@
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
 
   <!-- System/Misc Tab -->
     <string name="system_misc_tab_title">System/Misc</string>
