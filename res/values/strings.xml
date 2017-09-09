@@ -104,7 +104,8 @@
 
   <!-- Status bar Tab -->
     <string name="status_bar_tab_title">Status Bar</string>
-
+    <!-- DT2S on status bar -->
+    <string name="double_tap_sleep_gesture_title">Double tap status bar to sleep</string>
   <!-- Notifications Tab -->
     <string name="notifications_tab_title">Notifications</string>
     <string name="status_bar_quick_qs_pulldown">One-finger pull-down</string>
