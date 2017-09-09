@@ -29,6 +29,7 @@
     <string name="led_category">LED CONTROLS</string>
     <string name="recents_category">RECENTS</string>
     <string name="incall_vibration_category">IN-CALL VIBRATION</string>
+    <string name="qstiles_category_title">QS TILES</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->
@@ -152,4 +153,24 @@
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
+    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
+    <string name="navbar_buttons_title">Navbar buttons</string>
+    <string name="navbar_buttons_summary">Navbar layout and custom buttons</string>
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">allow volume down to enter do not disturb mode</string>
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">allow volume up to exit do not disturb mode</string>
+    <string name="vol_zen_title">Do not disturb switch</string>
+    <string name="vol_zen_summary">Show do not disturb swith on volume panel</string>
+    <string name="doze_always_on_title">Always-on Ambient Display</string>
+    <string name="doze_always_on_summary">Ambient will be on when the proximity sensor is uncovered</string>
+    <string name="powern_notifications_title">Power notifications</string>
+    <string name="powern_notifications_summary">Advanced notifications control on long press</string>
+    <string name="notifications_cat_title">Notifications</string>
 </resources>
