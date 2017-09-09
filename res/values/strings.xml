@@ -29,7 +29,7 @@
     <string name="led_category">LED CONTROLS</string>
     <string name="recents_category">RECENTS</string>
     <string name="incall_vibration_category">IN-CALL VIBRATION</string>
-    <string name="qstiles_category_title">QS TILES</string>
+    <string name="qs_expanded_view_layout_category">LAYOUT &amp; TOGGLES</string>
 
 <!-- General Integration -->
     <!-- Color Picker -->
@@ -68,15 +68,6 @@
     <!-- Power notification controls -->
     <string name="power_notification_title">Power notification controls</string>
     <string name="power_notification_summary">Advanced notification controls and information</string>
-    <!-- Volume down enter do not disturb -->
-    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
-    <string name="volbtn_down_zen_summary">Allow volume down to enter do not disturb mode</string>
-    <!-- Volume up exit do not disturb -->
-    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
-    <string name="volbtn_up_zen_summary">Allow volume up to exit do not disturb mode</string>
-    <!-- Volume do not disturb switch -->
-    <string name="vol_zen_title">Do not disturb switch</string>
-    <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Screen off power button torch</string>
     <string name="torch_power_button_gesture_none">Disabled</string>
@@ -102,6 +93,12 @@
     <string name="weather_icon_pack_title">Condition icon pack</string>
   <!-- Quick Settings Tab -->
     <string name="quick_settings_tab_title">Quick Settings</string>
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
 
   <!-- Status bar Tab -->
     <string name="status_bar_tab_title">Status Bar</string>
