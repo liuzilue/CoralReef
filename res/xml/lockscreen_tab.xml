@@ -29,19 +29,19 @@
         android:summary="@string/media_art_summary"
         android:defaultValue="false" />
 
-    <PreferenceScreen
+    <Preference
         android:key="lockscreen_weather"
         android:title="@string/lock_screen_weather_settings_title"
         android:summary="@string/lock_screen_weather_settings_summary"
         android:fragment="com.aquarios.coralreef.fragments.LockScreenWeatherSettings" />
 
-    <PreferenceScreen
+    <Preference
             android:title="@string/lockscreen_shortcuts_title"
             android:summary="@string/lockscreen_shortcuts_summary">
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
-    </PreferenceScreen>
+    </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory

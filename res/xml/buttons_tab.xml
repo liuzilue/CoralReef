@@ -22,20 +22,14 @@
 
   <PreferenceCategory
         android:title="@string/navbar_category_title">
-<!--
-    <PreferenceScreen
-        android:fragment="com.dui.settings.fragments.NavbarSettings"
-        android:key="flash_navbar_settings"
-        android:summary="@string/navigationbar_settings_summary"
-        android:title="@string/navbar_settings_title" />
--->
-     <PreferenceScreen
+
+     <Preference
             android:title="@string/navbar_buttons_title"
             android:summary="@string/navbar_buttons_summary">
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
-     </PreferenceScreen>
+     </Preference>
 
      <com.aquarios.coralreef.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_navbar"

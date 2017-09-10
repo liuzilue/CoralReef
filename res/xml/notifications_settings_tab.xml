@@ -24,7 +24,7 @@
         android:key="leds"
         android:title="@string/led_category" >
 
-      <PreferenceScreen
+      <Preference
         android:key="charging_light"
         android:title="@string/battery_light_title"
         android:summary="@string/battery_light_summary"

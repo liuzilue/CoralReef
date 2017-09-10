@@ -24,7 +24,7 @@
         android:key="qs_cat"
         android:title="@string/qs_expanded_view_layout_category" >
 
-        <PreferenceScreen
+        <Preference
             android:key="qs_rows_columns"
             android:fragment="com.aquarios.coralreef.fragments.QsRowsColumns"
             android:title="@string/qs_rows_columns_title"/>
