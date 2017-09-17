@@ -47,7 +47,7 @@
         <attr name="pstsTextSelectedAlpha" format="float" />
     </declare-styleable>
 
-    <!-- Base attributes available to CustomSeekBarPreference. -->
+    <!-- Base attributes available to CustomSeekBarPreference -->
     <declare-styleable name="CustomSeekBarPreference">
         <attr name="interval" format="integer" />
         <attr name="min" format="integer" />

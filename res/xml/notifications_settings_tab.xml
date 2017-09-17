@@ -19,7 +19,7 @@
     android:title="@string/notifications_tab_title"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
+<!--
     <PreferenceCategory
         android:key="leds"
         android:title="@string/led_category" >
@@ -67,5 +67,5 @@
          android:summary="@string/status_bar_quick_qs_pulldown_summary"
          android:defaultValue="true" />
     </PreferenceCategory>
-
+-->
 </PreferenceScreen>

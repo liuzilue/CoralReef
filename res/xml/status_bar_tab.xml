@@ -19,7 +19,7 @@
     android:title="@string/status_bar_tab_title"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
+<!--
     <Preference
             android:title="@string/status_bar_icon_blacklist_title"
             android:summary="@string/status_bar_icon_blacklist_summary">
@@ -32,5 +32,5 @@
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:defaultValue="false" />
-
+-->
 </PreferenceScreen>

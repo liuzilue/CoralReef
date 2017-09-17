@@ -19,7 +19,7 @@
     android:title="@string/lockscreen_tab_title"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
+<!--
     <PreferenceCategory
         android:title="@string/lockscreen_display_category_title">
 
@@ -53,5 +53,5 @@
          android:summary="@string/double_tap_sleep_lockscreen_summary"
          android:defaultValue="false" /> 
     </PreferenceCategory>
-
+-->
 </PreferenceScreen>

@@ -19,7 +19,7 @@
     android:title="@string/system_misc_tab_title"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
+<!--
     <PreferenceCategory
          android:title="@string/recents_category" >
 
@@ -57,5 +57,5 @@
         android:entries="@array/headset_connect_player_entries"
         android:entryValues="@array/headset_connect_player_values" />
   </PreferenceCategory>
-
+-->
 </PreferenceScreen>

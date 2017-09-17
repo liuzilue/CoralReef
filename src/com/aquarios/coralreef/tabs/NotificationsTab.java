@@ -21,7 +21,6 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -29,36 +28,14 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.aquarios.coralreef.preference.Utils;
-
 public class NotificationsTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
-    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
-
-    private PreferenceCategory mLedsCategory;
-    private Preference mChargingLeds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notifications_settings_tab);
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        mLedsCategory = (PreferenceCategory) findPreference("leds");
-        mChargingLeds = (Preference) findPreference("charging_light");
-        if (mChargingLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            mLedsCategory.removePreference(mChargingLeds);
-        }
-        if (mChargingLeds == null) {
-            prefSet.removePreference(mLedsCategory);
-        }
-        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
-        if (!Utils.isVoiceCapable(getActivity())) {
-            prefSet.removePreference(incallVibCategory);
-        }
+        final PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
