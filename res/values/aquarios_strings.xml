@@ -781,8 +781,8 @@
     <string name="screen_state_toggles_gps_summary">GPS based location service will be disabled on screen off</string>
     <string name="screen_state_toggles_mobile_data">Disable mobile data</string>
     <string name="screen_state_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
-    <string name="screen_state_off_delay_title">Screen Off actions delay</string>
-    <string name="screen_state_off_delay_summary">Number of seconds to wait before performing actions after screen off</string>
-    <string name="screen_state_on_delay_title">Screen On actions delay</string>
-    <string name="screen_state_on_delay_summary">Number of seconds to wait before performing actions after screen on</string>
+    <string name="screen_state_off_delay_title">屏幕关闭动作延迟</string>
+    <string name="screen_state_off_delay_summary">屏幕关闭后执行操作之前等待的秒数</string>
+    <string name="screen_state_on_delay_title">屏幕显示动作延迟</string>
+    <string name="screen_state_on_delay_summary">屏幕开启后执行操作之前等待的秒数屏幕开启后执行操作之前等待的秒数</string>
 </resources>
