@@ -15,7 +15,7 @@
 <!-- Coral Reef menus and categories -->
     <string name="coral_reef_title">Coral Reef</string>
     <string name="keywords_aquarios">AquariOS</string>
-    <string name="gestures_category_title">STATUS BAR GESTURES</string>
+    <string name="gestures_category_title">状态栏手势</string>
     <string name="navbar_category_title">NAVBAR OPTIONS</string>
     <string name="power_menu_category_title">POWER MENU</string>
     <string name="volume_rocker_category_title">VOLUME ROCKER</string>
