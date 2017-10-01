@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 AquariOS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- Coral Reef menus and categories -->
+    <string name="coral_reef_title">Coral Reef</string>
+    <string name="keywords_aquarios">AquariOS</string>
+    <string name="navbar_category_title">NAVBAR OPTIONS</string>
+    <string name="power_menu_category_title">POWER MENU</string>
+    <string name="volume_rocker_category_title">VOLUME ROCKER</string>
+    <string name="lockscreen_actions_category_title">LOCK SCREEN ACTIONS</string>
+    <string name="lockscreen_display_category_title">LOCK SCREEN DISPLAY</string>
+    <string name="general_category_title">GENERAL</string>
+    <string name="other_category">OTHER</string>
+    <string name="led_category">LED CONTROLS</string>
+    <string name="recents_category">RECENTS</string>
+    <string name="incall_vibration_category">IN-CALL VIBRATION</string>
+    <string name="qs_expanded_view_layout_category">LAYOUT &amp; TOGGLES</string>
+
+<!-- General Integration -->
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
+<!-- Tabs -->
+  <!-- Buttons Tab-->
+    <string name="buttons_tab_title">Buttons</string>
+    <!-- Navbar category -->
+    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+    <string name="double_tap_sleep_navbar_summary">Double tap on the navigation bar to put the device to sleep</string>
+    <string name="navigationbar_settings_title">Navigation bar</string>
+    <string name="navigationbar_settings_summary">Customize navigation style and behavior</string>
+    <!-- Power Menu -->
+    <!-- Volume Rocker -->
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_title">Volume rocker</string>
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+    <!-- Volume key orientation swap -->
+    <string name="swap_volume_buttons_title">Volume button swap</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons action when in landscape orientation</string>
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+    <!-- Power notification controls -->
+    <string name="power_notification_title">Power notification controls</string>
+    <string name="power_notification_summary">Advanced notification controls and information</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Screen off power button torch</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
+    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+  <!-- Lockscreen Tab-->
+    <string name="lockscreen_tab_title">Lock Screen</string>
+    <!-- Lock screen actions category -->
+    <!-- Lockscreen double tap to sleep -->
+    <string name="double_tap_sleep_lockscreen_title">Double-tap to sleep anywhere</string>
+    <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lock screen to put the device to sleep</string>
+    <!-- Media art -->
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+    <!-- Lockscreen weather -->
+    <string name="lock_screen_weather_settings_title">Weather</string>
+    <string name="lock_screen_weather_settings_summary">Set or change the weather to be displayed on the lockscreen</string>
+    <string name="weather_show_weather_title">Show weather</string>
+    <string name="weather_show_weather_summary">Enable to show weather information</string>
+    <string name="weather_show_location_title">Show location</string>
+    <string name="weather_show_location_summary">Enable to show the location</string>
+    <string name="weather_config_title">Service settings</string>
+    <string name="weather_icon_pack_title">Condition icon pack</string>
+  <!-- Quick Settings Tab -->
+    <string name="quick_settings_tab_title">Quick Settings</string>
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+
+  <!-- Status bar Tab -->
+    <string name="status_bar_tab_title">Status Bar</string>
+    <!-- DT2S on status bar -->
+    <string name="double_tap_sleep_gesture_title">Double tap status bar to sleep</string>
+
+  <!-- Notifications Tab -->
+    <string name="notifications_tab_title">Notifications</string>
+    <string name="status_bar_quick_qs_pulldown">One-finger pull-down</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Quickly enter expanded notification view by pulling down on right side of status bar using one finger</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">Battery charging light</string>
+    <string name="battery_light_summary">Enable the option to show LED notifications based on the status of battery.</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full (100) battery</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+
+  <!-- System/Misc Tab -->
+    <string name="system_misc_tab_title">System/Misc</string>
+    <!-- Sms security limit -->
+    <string name="apps_security_options_title">Apps security</string>
+    <string name="sms_outgoing_check_max_count_title">SMS apps message limit</string>
+    <string name="sms_outgoing_check_max_count_dialog">How many messages per minute an app can send before showing an alert</string>
+    <string name="sms_outgoing_check_max_count_default">30 per minute (default)</string>
+    <string name="sms_outgoing_check_max_count_hundred">100 per minute</string>
+    <string name="sms_outgoing_check_max_count_sixhundred">600 per minute</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
+    <!-- Recents settings -->
+    <string name="show_clear_all_recents_button_title">Clear all button</string>
+    <string name="show_clear_all_recents_button_summary">Show floating button which clears all recent apps</string>
+    <string name="recents_clear_all_location_title">Clear all location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
+    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
+    <string name="navbar_buttons_title">Navbar buttons</string>
+    <string name="navbar_buttons_summary">Navbar layout and custom buttons</string>
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">allow volume down to enter do not disturb mode</string>
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">allow volume up to exit do not disturb mode</string>
+    <string name="vol_zen_title">Do not disturb switch</string>
+    <string name="vol_zen_summary">Show do not disturb swith on volume panel</string>
+    <string name="doze_always_on_title">Always-on Ambient Display</string>
+    <string name="doze_always_on_summary">Ambient will be on when the proximity sensor is uncovered</string>
+    <string name="powern_notifications_title">Power notifications</string>
+    <string name="powern_notifications_summary">Advanced notifications control on long press</string>
+    <string name="notifications_cat_title">Notifications</string>
+</resources>
